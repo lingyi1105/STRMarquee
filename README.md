@@ -22,21 +22,21 @@
 
 
 
-
-`
-STRAutoScrollLabel *autoLabel = [[STRAutoScrollLabel alloc] initWithFrame:CGRectMake(10, 30, 200, 40)];
-//设置文字
-autoLabel.text = @"跑马灯效果！哈哈哈哈哈哈，实现了，看看效果好不好";
-//设置颜色
+```
+STRAutoScrollLabel *autoLabel = [[STRAutoScrollLabel alloc] initWithFrame:CGRectMake(40, 130, self.view.frame.size.width-80, 40)];
+autoLabel.backgroundColor = [UIColor lightGrayColor];
+autoLabel.textAlignment = NSTextAlignmentRight;
+autoLabel.dirtionType = STRAutoScrollLabelDirtionTypeToRight;
+//color
 autoLabel.textColor = [UIColor redColor];
-[self.view addSubview:autoLabel];
-//根据实际情况，设置速度及之间间距
-//    autoLabel.speed = 70;
-//    autoLabel.labelBetweenGap = 100;
-`
+autoLabel.text = @"跑马灯效果！哈哈哈哈哈哈，实现了，看看效跑马灯效果！哈哈哈哈哈哈，实现了，看看效果好不好果好不好";
+//autoLabel.text = @"跑马灯效果";
+[self.scrollContantView addSubview:autoLabel];
+```
+
+
 
 
 
 ![image](https://github.com/TheYouth/STRMarquee/blob/master/screenShots/%E8%B7%91%E9%A9%AC%E7%81%AF%E6%95%88%E6%9E%9C%E5%9B%BE.gif)
-======
 
