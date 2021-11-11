@@ -1,26 +1,147 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTC-j5-n93">
+                                <rect key="frame" x="0.0" y="308" width="414" height="300"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCJ-gR-gNE">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="400"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqu-Ff-z1z">
+                                                <rect key="frame" x="172.5" y="37" width="69" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="86S-2p-fSw">
+                                                <rect key="frame" x="169" y="302" width="76" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oMY-xV-vZD" customClass="STRAutoScrollLabel">
+                                                <rect key="frame" x="87" y="253" width="240" height="41"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="2Tu-6B-c3B"/>
+                                                    <constraint firstAttribute="width" constant="240" id="zYz-ij-pLT"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="这个是IB创建的跑马灯 与frame方式创建的是一样的效果"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" systemColor="systemIndigoColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textAlignment">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQy-Jr-wii" customClass="STRAutoScrollLabel">
+                                                <rect key="frame" x="87" y="204" width="240" height="41"/>
+                                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="J58-dR-fZB"/>
+                                                    <constraint firstAttribute="height" constant="41" id="nhI-H1-Hbj"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="---------"/>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" systemColor="systemOrangeColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="textAlignment">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="86S-2p-fSw" secondAttribute="bottom" constant="77" id="4bJ-bP-eNg"/>
+                                            <constraint firstItem="eQy-Jr-wii" firstAttribute="centerX" secondItem="CCJ-gR-gNE" secondAttribute="centerX" id="77T-zW-j4j"/>
+                                            <constraint firstItem="oMY-xV-vZD" firstAttribute="top" secondItem="eQy-Jr-wii" secondAttribute="bottom" constant="8" symbolic="YES" id="MQ6-Xa-U9o"/>
+                                            <constraint firstAttribute="height" constant="400" id="R3y-Nw-wPA"/>
+                                            <constraint firstItem="Vqu-Ff-z1z" firstAttribute="top" secondItem="CCJ-gR-gNE" secondAttribute="top" constant="37" id="elg-dg-dSQ"/>
+                                            <constraint firstItem="Vqu-Ff-z1z" firstAttribute="centerX" secondItem="CCJ-gR-gNE" secondAttribute="centerX" id="ok5-YL-6W2"/>
+                                            <constraint firstItem="oMY-xV-vZD" firstAttribute="centerX" secondItem="CCJ-gR-gNE" secondAttribute="centerX" id="rwf-Wk-oC6"/>
+                                            <constraint firstItem="86S-2p-fSw" firstAttribute="top" secondItem="oMY-xV-vZD" secondAttribute="bottom" constant="8" symbolic="YES" id="v6t-0d-bL1"/>
+                                            <constraint firstItem="86S-2p-fSw" firstAttribute="centerX" secondItem="CCJ-gR-gNE" secondAttribute="centerX" id="xJk-Vs-dOi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CCJ-gR-gNE" firstAttribute="top" secondItem="KTC-j5-n93" secondAttribute="top" id="1vY-Xn-98l"/>
+                                    <constraint firstItem="CCJ-gR-gNE" firstAttribute="width" secondItem="KTC-j5-n93" secondAttribute="width" id="FaV-Ds-jsa"/>
+                                    <constraint firstItem="CCJ-gR-gNE" firstAttribute="bottom" secondItem="KTC-j5-n93" secondAttribute="bottom" id="G0h-Zx-f3a"/>
+                                    <constraint firstItem="CCJ-gR-gNE" firstAttribute="leading" secondItem="KTC-j5-n93" secondAttribute="leading" id="nyn-HB-4hV"/>
+                                    <constraint firstAttribute="height" constant="300" id="q2q-6q-DR7"/>
+                                    <constraint firstItem="CCJ-gR-gNE" firstAttribute="trailing" secondItem="KTC-j5-n93" secondAttribute="trailing" id="w4c-af-yNL"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-an-CIO">
+                                <rect key="frame" x="184" y="76" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUe-on-7VA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KTC-j5-n93" secondAttribute="trailing" id="H4S-QK-y59"/>
+                            <constraint firstItem="KTC-j5-n93" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="264" id="PC6-Yt-YdE"/>
+                            <constraint firstItem="f0k-an-CIO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="aWg-PJ-fJm"/>
+                            <constraint firstItem="f0k-an-CIO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uJZ-7q-TaK"/>
+                            <constraint firstItem="KTC-j5-n93" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zPH-P3-kDs"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label2View" destination="eQy-Jr-wii" id="7N5-qK-4N0"/>
+                        <outlet property="labelView" destination="oMY-xV-vZD" id="pnx-jL-lAG"/>
+                        <outlet property="scrollContantView" destination="CCJ-gR-gNE" id="S6F-tG-l7O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="87.723214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

@@ -220,7 +220,7 @@
 				TargetAttributes = {
 					3C8B9D431EFA956700FCC81F = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = 2CPF29H2XN;
+						DevelopmentTeam = NNWMV59U7L;
 						ProvisioningStyle = Automatic;
 					};
 					3C8B9D5C1EFA956700FCC81F = {
@@ -242,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -441,7 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2CPF29H2XN;
+				DEVELOPMENT_TEAM = NNWMV59U7L;
 				INFOPLIST_FILE = STRMarQuee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TestView.STRMarQuee;
@@ -453,7 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 2CPF29H2XN;
+				DEVELOPMENT_TEAM = NNWMV59U7L;
 				INFOPLIST_FILE = STRMarQuee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TestView.STRMarQuee;

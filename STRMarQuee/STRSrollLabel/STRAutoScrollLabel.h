@@ -8,27 +8,62 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger,DirtionType){
+
+typedef NS_ENUM(NSUInteger, STRAutoScrollLabelDirtionType) {
  
-    DirtionTypeLeft, //left
-    DirtionTypeRight //right
+    STRAutoScrollLabelDirtionTypeToLeft = 0, //to left
+    STRAutoScrollLabelDirtionTypeToRight = 1, //to right
     
 };
 
-@interface STRAutoScrollLabel : UIScrollView
 
+IB_DESIGNABLE
+@interface STRAutoScrollLabel : UIView
 //set Text
-@property (nonatomic, copy) NSString *text;
-// label and label gap
+@property (nonatomic, copy) IBInspectable NSString *text;
+//set Color
+@property (nonatomic, strong) IBInspectable UIColor *textColor;
+
+@property (nonatomic, assign) IBInspectable CGFloat fontSize;
+
+//textAlignment support NSTextAlignmentLeft NSTextAlignmentCenter NSTextAlignmentRight only
+@property (nonatomic, assign) IBInspectable NSUInteger textAlignment;
+
+@property (nonatomic, strong) UIFont *font;
+
+//label and label gap
 @property (nonatomic, assign) NSInteger labelBetweenGap;
 //deafult 2 秒
 @property (nonatomic, assign) NSInteger pauseTime;
-//deafult DirtionTypeLeft
-@property (nonatomic, assign) DirtionType dirtionType;
-//set speed ,default 30
+//deafult STRAutoScrollLabelDirtionTypeToLeft
+@property (nonatomic, assign) STRAutoScrollLabelDirtionType dirtionType;
+//set speed, default 30
 @property (nonatomic, assign) NSInteger speed;
-//set Color
-@property (nonatomic, strong) UIColor  *textColor;
 
-- (void)rejustlabels;
+@end
+
+
+@interface STRAutoScrollView : UIScrollView
+
+//set Text
+@property (nonatomic, copy) NSString *text;
+//set Color
+@property (nonatomic, strong) UIColor *textColor;
+
+//label and label gap
+@property (nonatomic, assign) NSInteger labelBetweenGap;
+//deafult 2 秒
+@property (nonatomic, assign) NSInteger pauseTime;
+//deafult STRAutoScrollLabelDirtionTypeToLeft
+@property (nonatomic, assign) STRAutoScrollLabelDirtionType dirtionType;
+//set speed, default 30
+@property (nonatomic, assign) NSInteger speed;
+
+//textAlignment support NSTextAlignmentLeft NSTextAlignmentCenter NSTextAlignmentRight only
+@property (nonatomic, assign) NSTextAlignment textAlignment;
+
+@property (nonatomic, assign) CGFloat fontSize;
+
+@property (nonatomic, strong) UIFont *font;
+
 @end
